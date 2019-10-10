@@ -43,10 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Clubs.cs" />
+    <Compile Include="Models\Clubs.cs" />
     <Compile Include="Extensions\DateTimeExtensions.cs" />
-    <Compile Include="Models\ListOfClubs.cs" />
+    <Compile Include="Models\ListOfClubs.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
     <Compile Include="Models\Tolchok.cs" />
+    <Compile Include="Processing\ShowClubs.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WeaponMaterial.cs" />

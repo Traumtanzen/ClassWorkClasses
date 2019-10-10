@@ -1,4 +1,5 @@
 ﻿using ClassWorkClasses.Extensions;
+using ClassWorkClasses.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,8 +13,7 @@ namespace ClassWorkClasses.Models
         public string Name { get; set; }
         public int Age { get { return DateOfBirth.GetYearsDiff(DateTime.Now); } }
         public string FavWeapon { get; set; }
-        public string GamesPlayed { get; set; }
-
+        public string GamesVisited { get; set; }
         public DateTime DateOfBirth { get; set; }
         public ClubNames Club { get; set; }
         public string PrepareReport()

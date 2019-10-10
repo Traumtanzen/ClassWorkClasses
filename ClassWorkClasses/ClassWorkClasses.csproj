@@ -43,8 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clubs.cs" />
     <Compile Include="Extensions\DateTimeExtensions.cs" />
-    <Compile Include="Models\Club.cs" />
+    <Compile Include="Models\ListOfClubs.cs" />
     <Compile Include="Models\Tolchok.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

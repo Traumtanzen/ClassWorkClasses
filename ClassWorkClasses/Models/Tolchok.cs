@@ -11,6 +11,7 @@ namespace ClassWorkClasses.Models
     {
         public string Name { get; set; }
         public int Age { get { return DateOfBirth.GetYearsDiff(DateTime.Now); } }
+        public string FavWeapon { get; set; }
         public DateTime DateOfBirth { get; set; }
         public ClubNames Club { get; set; }
         public string PrepareReport()

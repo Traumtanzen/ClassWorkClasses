@@ -22,15 +22,15 @@ namespace ClassWorkClasses.Models
         }
         public enum WeaponSize
         {
-            Big,
-            Middle,
-            Small
+            Big ,
+            Middle ,
+            Small 
         }
         public enum WeaponMaterial
         {
-            Duraliminium,
-            Plastic,
-            EVAfoam
+            Duraliminium ,
+            Plastic ,
+            EVAfoam 
         }
         public enum BrigadaMembers
         {

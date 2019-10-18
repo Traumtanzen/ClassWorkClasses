@@ -14,7 +14,7 @@ namespace ClassWorkClasses
         public string ClubMembers { get; set; }
 
 
-        }
     }
 }
+
 

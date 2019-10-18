@@ -7,23 +7,41 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static ClassWorkClasses.Models.TolchokEnums;
 
 namespace ClassWorkClasses
 {
     class Program
     {
+        static BrigadaMembers brigMemberName;
+        static WeaponSize brgMmbrWpnSz;
+        static WeaponMaterial brgMmbrWpnMtr;
+        static WeaponType brgMmbrWpnTp;
+        static VisitedGames brgVisGames;
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to TolchokInfo database. Here we have some information on Minsk city LARP movement");
-                
+
             var clubsList = new ShowClubs();
             clubsList.ShowListOfClubs();
 
             var clubMembers = new ShowClubs();
             clubMembers.ShowClub();
-            
-            Console.WriteLine($"");
-            
+
+            BrigadaMembers brigMemberName = (BrigadaMembers)1;
+            WeaponSize brgMmbrWpnSz = 0;
+            WeaponMaterial brgMmbrWpnMtr = 0;
+            WeaponType brgMmbrWpnTp = 0;
+            VisitedGames brgVisGames = 0;
+
+            var brigMember1 = new Tolchok();
+            brigMember1.Name = brigMemberName.ToString();
+            brigMember1.FavWeapon = $"{brgMmbrWpnSz} {brgMmbrWpnMtr} {brgMmbrWpnTp}";
+            brigMember1.GamesVisited = brgVisGames.ToString();
+            Console.WriteLine(brigMember1.PrepareReport());
+
+
+
 
 
 

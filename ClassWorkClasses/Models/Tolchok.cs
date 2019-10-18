@@ -20,8 +20,7 @@ namespace ClassWorkClasses.Models
         public ClubNames Club { get; set; }
         public string PrepareReport()
         {
-            return $"Tolchok {Name} is {Age} years old is in {Club.ToString()}";
+            return $"\nTolchok {Name} has favourite weapon - {FavWeapon} and visited {GamesVisited}";
         }
-
     }
 }

@@ -41,6 +41,8 @@ namespace ClassWorkClasses.Processing
         {
             Console.WriteLine("\nPlease choose a club from the list by entering its number to see its members or anything else to go back");
             string showMembers = Console.ReadLine();
+            BrigadaMembers brigHead = 0;
+            OsoznanieMembers osozHead = (OsoznanieMembers)1;
             switch (showMembers)
             {
                 case "0":
@@ -48,14 +50,14 @@ namespace ClassWorkClasses.Processing
                     {
                         Console.WriteLine($"{(int)member} - {member}");
                     }
-                    Console.WriteLine($"\nThe head of the club is {BrigadaMembers.Dexter}");
+                    Console.WriteLine($"\nThe head of the club is {brigHead}");
                     break;
                 case "1":
                     foreach (OsoznanieMembers member in (OsoznanieMembers[])Enum.GetValues(typeof(OsoznanieMembers)))
                     {
                         Console.WriteLine($"{(int)member} - {member}");
                     }
-                    Console.WriteLine($"\nThe head of the club is {OsoznanieMembers.Stefan}");
+                    Console.WriteLine($"\nThe head of the club is {osozHead}");
                     break;
                 case "2":
                     foreach (UnsortedMembers member in (UnsortedMembers[])Enum.GetValues(typeof(UnsortedMembers)))

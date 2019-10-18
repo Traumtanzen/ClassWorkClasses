@@ -1,10 +1,12 @@
 ﻿using ClassWorkClasses.Extensions;
 using ClassWorkClasses.Models;
+using ClassWorkClasses.Processing;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static ClassWorkClasses.Models.TolchokEnums;
 
 namespace ClassWorkClasses.Models
 {

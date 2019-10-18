@@ -14,16 +14,19 @@ namespace ClassWorkClasses
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to TolchokInfo database. Here we have some information on Minsk city LARP movement" +
-                "\nPress <L> to see the list of LARP clubs or <Q> to quit.");
+            Console.WriteLine("Welcome to TolchokInfo database. Here we have some information on Minsk city LARP movement");
+                
             var clubsList = new ShowClubs();
             clubsList.ShowListOfClubs();
-            Console.WriteLine("Please choose a club from the list by entering its number to see its members");
+
+            var clubMembers = new ShowClubs();
+            clubMembers.ShowClub();
+            
+            Console.WriteLine($"");
+            
 
 
 
-
-                
 
 
 
@@ -50,8 +53,6 @@ namespace ClassWorkClasses
             //    Console.WriteLine("noname club"); 
             //}
 
-            //var newDate = new DateTime(1945, 5, 9);
-            //Console.WriteLine($"{newDate.GetYearsDiff(DateTime.Now)} years from victory of {newDate.GetCentury()} century greatest war"); 
             Console.ReadLine();
         }
     }

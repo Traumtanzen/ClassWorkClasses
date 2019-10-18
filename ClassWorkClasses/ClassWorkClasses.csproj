@@ -45,16 +45,13 @@
   <ItemGroup>
     <Compile Include="Models\Clubs.cs" />
     <Compile Include="Extensions\DateTimeExtensions.cs" />
-    <Compile Include="Models\ListOfClubs.cs">
+    <Compile Include="Models\TolchokEnums.cs">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="Models\Tolchok.cs" />
     <Compile Include="Processing\ShowClubs.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WeaponMaterial.cs" />
-    <Compile Include="WeaponSize.cs" />
-    <Compile Include="WeaponType.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
